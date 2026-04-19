@@ -10,8 +10,10 @@ All custom skills for Hadi's workflows. Each skill lives in its own folder with 
 
 | Skill | What it does |
 |---|---|
-| `article-voice/` | Tommy's guide to writing in Hadi's voice — distilled from his actual essays. Read this before writing or reviewing any article. |
+| `article-voice/` | Tommy's guide to writing in Hadi's voice — distilled from his actual essays. Read this before writing or drafting any article. |
 | `article-voice-updater/` | Updates `article-voice/` as Hadi writes new essays. Run after a new piece lands in `life-os/writing/`. |
+| `article-review/` | Reviews an essay for coherence, internal consistency, argument logic, and structural flow. Use when Hadi says "review this: [filename]". Does not edit or rewrite. |
+| `thomas-article-commentary/` | Tommy writes a commentary on an essay, article, or poem — in Hadi's voice, but with Tommy's own opinions. Source is never modified. Output goes to `life-os/writing/commentary/`. Includes authorship frontmatter and a visible disclaimer. |
 
 ## Publishing
 

@@ -1,9 +1,9 @@
 ---
 name: article-voice
-description: "Tommy's guide to writing in Hadi's voice. Use this skill whenever Hadi asks Tommy to help write, draft, review, or give feedback on an essay or article (NOT poems — those follow a different protocol). Also trigger when Hadi says 'write this in my voice', 'does this sound like me', 'help me write this piece', 'review this article', or drops a file from life-os/writing/. This skill captures Hadi's rhetorical patterns, structural moves, and tonal signatures distilled from his actual essays."
+description: "Tommy's guide to writing in Hadi's voice. Use this skill whenever Hadi asks Tommy to help write or draft an essay or article in his voice (NOT poems — those follow a different protocol). Also trigger when Hadi says 'write this in my voice', 'does this sound like me', 'help me write this piece', or wants Tommy to produce a new piece. For reviewing an existing essay for coherence and consistency, use article-review instead — this skill is for production, not review."
 metadata:
   created: 2026-04-16 03:11 WIB
-  updated: 2026-04-16 03:11 WIB
+  updated: 2026-04-19 00:00 WIB
 ---
 
 # Article Voice — Writing as Hadi
@@ -90,23 +90,6 @@ The last line of every piece carries the full weight of the argument and folds b
 
 ---
 
-## When Reviewing an Essay (Tommy's Protocol)
-
-When Hadi says "review this: [filename]" or drops a file from `life-os/writing/`:
-
-1. Read the piece completely before saying anything
-2. Respond with three things:
-   - **What's strong** — what's working (argument, voice, structure, one of the signatures above)
-   - **Where it's weak** — gaps in logic, voice drift, structural problems, an ending that doesn't land
-   - **One hard question** — the toughest thing a skeptical reader would push back on
-3. Do not edit the file. Do not rewrite sentences. Do not soften the feedback.
-4. Check if the frontmatter has an `author` field and if the disclosure note is at the bottom. If either is missing, flag it — don't add them without Hadi confirming the authorship.
-5. Wait for Hadi to decide what to do with it.
-
-The goal is clarity, not comfort.
-
----
-
 ## Authorship & Disclosure
 
 Every article has a clear authorship status. There are two modes:
@@ -173,7 +156,9 @@ When Hadi asks Tommy to draft or help write a piece:
 
 ## Voice Evolution
 
-This skill is a living document. As Hadi writes more, the `article-voice-updater` skill reads new essays and patches this file with anything new or evolved in his voice. Check the bottom of this file for any update notes before using it.
+This skill is a living document. Hadi's voice is defined by what he actually writes — not by Tommy's prior interpretation of it. After Hadi writes a new essay and it passes `article-review`, run `article-voice-updater` to update this file from the actual new piece. The voice file should trail real writing, not lead it.
+
+Check the bottom of this file for any update notes before using it.
 
 **Last updated from:** `20260323_attentionIsAllYouNeed.md`, `20260324_gameshouldrecognizegame.md`, `20260325_maintenanceislove.md`
 **Updated:** 2026-04-16

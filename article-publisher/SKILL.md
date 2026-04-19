@@ -91,11 +91,13 @@ Disclosure text here.
 ```
 If no natural moment exists in the body, skip the inline placement — don't force it.
 
-**Coffee link footer** — always append this block at the end of every article, after the last paragraph:
+**Coffee link footer** — always append this card at the end of every article, after the last paragraph:
 ```html
-<div class="mt-12 pt-8 border-t border-slate-200 text-center">
-  <p class="text-sm text-slate-500 mb-2">If this was worth your attention —</p>
-  <a href="https://buymeacoffee.com/hadikurniac" class="font-bold text-amber-700 underline" target="_blank" rel="noopener noreferrer">Buy me a coffee</a>
+<div class="mt-12 rounded-xl border border-slate-200 p-6 bg-slate-50/60 flex flex-col items-center gap-3 text-center">
+  <p class="text-sm font-semibold text-slate-700">If this was worth your attention — support the writing</p>
+  <a href="https://buymeacoffee.com/hadikurniac" target="_blank">
+    <img src="https://cdn.buymeacoffee.com/buttons/v2/default-orange.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" />
+  </a>
 </div>
 ```
 
